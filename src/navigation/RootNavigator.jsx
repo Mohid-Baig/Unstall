@@ -6,6 +6,7 @@ import LandingScreen from '../screens/Landing/LandingScreen';
 import ResetRitualScreen from '../screens/ResetRitual/ResetRitualScreen';
 import TinyActionScreen from '../screens/TinyAction/TinyActionScreen';
 import FocusSessionScreen from '../screens/FocusSession/FocusSessionScreen';
+import CompletionScreen from '../screens/Completion/CompletionScreen';
 import { colors } from '../theme/colors';
 
 const Stack = createNativeStackNavigator();
@@ -42,6 +43,7 @@ export default function RootNavigator() {
         <Stack.Screen name="ResetRitual" component={ResetRitualScreen} />
         <Stack.Screen name="TinyAction" component={TinyActionScreen} />
         <Stack.Screen name="FocusSession" component={FocusSessionScreen} />
+        <Stack.Screen name="Completion" component={CompletionScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
